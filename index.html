@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio cá nhân của Võ Thị Minh Tùng - học viên ngành Đông phương học và Thương mại điện tử."
+    />
+    <title>Võ Thị Minh Tùng | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Lớp nền hình ảnh động: bong bóng bồng bềnh -->
+    <canvas id="bubbleCanvas" aria-hidden="true"></canvas>
+
+    <!-- Nút phát/tạm dừng nhạc nền -->
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Phát nhạc nền">
+      <span class="music-icon">♫</span>
+      <span class="music-label">Play</span>
+    </button>
+
+    <audio id="bgMusic" loop preload="auto" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="#home" class="brand" aria-label="Về trang chủ">
+          <span class="brand-mark">VTM</span>
+          <span class="brand-text">
+            <strong>Võ Thị Minh Tùng</strong>
+            <small>Portfolio</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Menu chính">
+          <a href="#home">Trang chủ</a>
+          <a href="#education">Học vấn</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero / Giới thiệu -->
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Đông phương học • Thương mại điện tử</p>
+            <h1>Võ Thị Minh Tùng</h1>
+            <p class="lead">
+              Tôi là một sinh viên năng động, hiện đang theo học ngành Thương mại điện tử
+              tại UEH, đồng thời mang nền tảng học vấn vững chắc từ chương trình Đông phương học.
+              Tôi tin rằng sự kết hợp giữa văn hóa, giao tiếp và kinh doanh số sẽ mở ra nhiều cơ hội
+              phát triển trong tương lai.
+            </p>
+
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#contact">Liên hệ</a>
+              <a class="btn btn-secondary" href="#education">Xem học vấn</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="card-glow"></div>
+            <div class="profile-badge">VTM</div>
+            <p class="card-label">PROFILE</p>
+            <h2>Thế giới của tôi</h2>
+            <p class="quote">
+              “Kết nối văn hóa, thấu hiểu thị trường và tạo giá trị trong thương mại số.”
+            </p>
+
+            <ul class="tag-list" aria-label="Các lĩnh vực quan tâm">
+              <li>Đông phương học</li>
+              <li>TMĐT</li>
+              <li>Giao tiếp</li>
+              <li>Marketing</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education / Học vấn -->
+      <section id="education" class="section education">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Education</p>
+            <h2>Quá trình học vấn</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item left">
+              <div class="timeline-content">
+                <span class="year">2018 - 2022</span>
+                <h3>Đại học Văn Lang</h3>
+                <p>Văn bằng 1: Cử nhân Đông phương học</p>
+                <strong>Xếp loại: Khá</strong>
+              </div>
+            </article>
+
+            <article class="timeline-item right">
+              <div class="timeline-content">
+                <span class="year">2025 - Hiện tại</span>
+                <h3>Trường Đại học Kinh tế TP. Hồ Chí Minh (UEH)</h3>
+                <p>Văn bằng 2: Thương mại điện tử</p>
+                <strong>Đang theo học</strong>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact / Liên hệ -->
+      <section id="contact" class="section contact">
+        <div class="container contact-grid">
+          <div class="contact-panel info-panel">
+            <p class="eyebrow">Contact</p>
+            <h2>Liên hệ & hợp tác</h2>
+
+            <div class="contact-list">
+              <div class="info-item">
+                <span class="icon">✉</span>
+                <div>
+                  <small>Email</small>
+                  <a href="mailto:tungvo.89251020120@st.ueh.edu.vn">tungvo.89251020120@st.ueh.edu.vn</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="icon">⌂</span>
+                <div>
+                  <small>Địa chỉ</small>
+                  <p>TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-panel form-panel">
+            <form class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input id="name" name="name" type="text" placeholder="Nhập họ tên của bạn" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="example@email.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Tin nhắn</label>
+                <textarea id="message" name="message" rows="5" placeholder="Viết tin nhắn của bạn..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn">Gửi tin nhắn</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Võ Thị Minh Tùng. All rights reserved.</p>
+        <p>Designed with modern elegance.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
